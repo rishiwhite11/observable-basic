@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { ReactivePatternsCoursePage } from './app.po';
 
-describe('reactive-small-sample App', () => {
-  let page: AppPage;
+describe('reactive-patterns-course App', function() {
+  let page: ReactivePatternsCoursePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new ReactivePatternsCoursePage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
